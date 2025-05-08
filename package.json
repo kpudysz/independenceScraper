@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node dist/main.js",
-    "build": "npx nest build"
+    "build": "nest build"
   },
   "dependencies": {
     "axios": "1.9.0",

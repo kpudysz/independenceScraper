@@ -16,6 +16,10 @@ export class HighscoresController {
     async scrapPlayers() {
         return this.highscoresService.scrapeHighscores()
     }
+    @Get('healthCheck')
+    async healthCheck(){
+        return 'Ok'
+    }
 }
 
 
