@@ -4,7 +4,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "nest start",
+    "start": "node dist/main.js",
     "build": "nest build"
   },
   "dependencies": {
