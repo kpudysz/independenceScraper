@@ -4,8 +4,9 @@
   "private": true,
   "main": "index.js",
   "scripts": {
+    "build": "nest build",
     "start": "node dist/main.js",
-    "build": "nest build"
+    "prestart": "yarn build"
   },
   "dependencies": {
     "axios": "1.9.0",
