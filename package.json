@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node dist/main.js",
-    "build": "nest build"
+    "build": "npx nest build"
   },
   "dependencies": {
     "axios": "1.9.0",
@@ -13,7 +13,6 @@
     "mongodb": "6.16.0",
     "date-fns": "4.1.0",
     "@nestjs/common": "11.1.0",
-    "@nestjs/cli": "11.0.7",
     "@nestjs/mongoose": "11.0.3",
     "@nestjs/config": "4.0.2",
     "class-validator": "0.14.2",
@@ -26,6 +25,7 @@
   "devDependencies": {
     "typescript": "5.8.3",
     "ts-node": "10.9.2",
+    "@nestjs/cli": "11.0.7",
     "tsconfig-paths": "4.2.0",
     "@typescript-eslint/eslint-plugin": "6.0.0",
     "@typescript-eslint/eslint-plugin-tslint": "6.0.0",
