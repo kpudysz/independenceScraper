@@ -1,0 +1,41 @@
+{
+  "name": "independencescrapper",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "nest start",
+    "build": "nest build"
+  },
+  "dependencies": {
+    "axios": "1.9.0",
+    "cheerio": "1.0.0",
+    "mongodb": "6.16.0",
+    "date-fns": "4.1.0",
+    "@nestjs/common": "11.1.0",
+    "@nestjs/cli": "11.0.7",
+    "@nestjs/mongoose": "11.0.3",
+    "@nestjs/config": "4.0.2",
+    "class-validator": "0.14.2",
+    "class-transformer": "0.5.1",
+    "@nestjs/core": "11.1.0",
+    "@nestjs/platform-express": "11.1.0",
+    "reflect-metadata": "0.2.2",
+    "mongoose": "8.14.1"
+  },
+  "devDependencies": {
+    "typescript": "5.8.3",
+    "ts-node": "10.9.2",
+    "tsconfig-paths": "4.2.0",
+    "@typescript-eslint/eslint-plugin": "6.0.0",
+    "@typescript-eslint/eslint-plugin-tslint": "6.0.0",
+    "@typescript-eslint/parser": "6.0.0",
+    "@vitejs/plugin-react": "4.0.3",
+    "dotenv": "16.3.1",
+    "eslint": "8.57.1",
+    "eslint-plugin-jsdoc": "46.4.3",
+    "eslint-plugin-no-loops": "0.3.0",
+    "eslint-plugin-prefer-arrow": "1.2.3"
+  },
+  "rootDir": "src"
+}
