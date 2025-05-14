@@ -1,7 +1,8 @@
 import { Module } from '@nestjs/common'
 import { MongooseModule } from '@nestjs/mongoose'
 import { ConfigModule, ConfigService } from '@nestjs/config'
-import { HighscoresModule } from './highscores/highscores.module'
+import { HighscoresModule } from './highscores'
+import { WikiModule } from './wiki'
 
 @Module({
     imports: [
@@ -15,7 +16,8 @@ import { HighscoresModule } from './highscores/highscores.module'
             }),
             inject: [ConfigService],
         }),
-        HighscoresModule
+        HighscoresModule,
+        WikiModule
     ]
 })
 export class AppModule {}
