@@ -20,7 +20,6 @@
     "@nestjs/core": "11.1.0",
     "@nestjs-modules/mailer": "2.0.2",
     "nodemailer": "7.0.3",
-    "@nestjs/throttler": "6.4.0",
     "@nestjs/platform-express": "11.1.0",
     "reflect-metadata": "0.2.2",
     "mongoose": "8.14.1"
