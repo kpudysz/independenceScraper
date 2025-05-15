@@ -7,15 +7,16 @@ export class WikiController {
 
   @Post('send-suggestion')
   async sendSuggestion(
-    @Body('content') content: string,
-    @Body('source') source: string,
-    @Body('author') author: string,
-  ) : Promise<{message: string}> {
-      await this.mailerService.sendMail({
-        to: 'krzysztofpudysz97@gmail.com',
-        subject: `New Wiki Suggestion for ${source} by ${author}`,
-        text: `Content: ${content}`
-      })
-      return { message: 'Suggestion sent successfully' }
+    @Body() body: { content: string, source: string, author: string }
+  ) : Promise<{ message: string }> {
+    const { content, source, author } = body
+
+    await this.mailerService.sendMail({
+      to: 'krzysztofpudysz97@gmail.com',
+      subject: `New Wiki Suggestion for ${source} by ${author}`,
+      text: `Content: ${content}`
+    })
+
+    return { message: 'Suggestion sent successfully' }
   }
 }
