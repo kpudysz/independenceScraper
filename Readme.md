@@ -14,12 +14,12 @@ This project is a backend part of the independence calculator.
 
 ## Running Locally
 To run this project locally you require few envs:
-MONGODB_URI - MongoDB connection string, you can get it from MongoDB Atlas
-SCRAP_TOKEN - Scrap token used for scraping data from the website and bypass the cloudflare protection. This token will be used during during first two weeks of the month. You can get it from [here](https://api.scrape.do)
-SCRAP_TOKENTWO - Second scrap token used for scraping data from the website and bypass the cloudflare protection. This token will be used during during last two weeks of the month.
-SMTP_USER - SMTP user used for sending emails
-SMTP_PASS - SMTP password used for sending emails
-SMTP_RECIPIENT - SMTP recipient used for sending emails
+- MONGODB_URI - MongoDB connection string, you can get it from MongoDB Atlas
+- SCRAP_TOKEN - Scrap token used for scraping data from the website and bypass the cloudflare protection. This token will be used during during first two weeks of the month. You can get it from [here](https://api.scrape.do)
+- SCRAP_TOKENTWO - Second scrap token used for scraping data from the website and bypass the cloudflare protection. This token will be used during during last two weeks of the month.
+- SMTP_USER - SMTP user used for sending emails
+- SMTP_PASS - SMTP password used for sending emails
+- SMTP_RECIPIENT - SMTP recipient used for sending emails
 
 After you have all required envs run ```yarn build``` and ```yarn start```
 to start the app.
