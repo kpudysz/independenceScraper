@@ -1,6 +1,9 @@
-import { Module } from '@nestjs/common';
-import { MailerModule } from '@nestjs-modules/mailer';
-import { WikiController } from './wiki.controller';
+import { MailerModule } from '@nestjs-modules/mailer'
+import { Module } from '@nestjs/common'
+import * as dotenv from 'dotenv'
+import { WikiController } from './wiki.controller'
+
+dotenv.config()
 
 @Module({
   imports: [
@@ -9,12 +12,12 @@ import { WikiController } from './wiki.controller';
         host: 'smtp.gmail.com',
         port: 587,
         auth: {
-          user: 'gengarguntrip@gmail.com',
-          pass: 'jbainzekrbfxfzgx',
+          user: process.env.SMTP_USER,
+          pass: process.env.SMTP_PASS,
         },
       },
     }),
   ],
   controllers: [WikiController],
 })
-export class WikiModule {}
+export class WikiModule { }
