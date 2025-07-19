@@ -55,7 +55,7 @@ export class WikiController {
       .map(world => `🌍 ${world.name} updated ${differenceInMinutes(currentDate, new Date(world.last_update))} minutes ago`)
       .join('\n')
 
-    await axios.post(process.env.DISCORD_WEBHOOK, {
+    await axios.post(process.env.DISCORD_WEBHOOK!, {
       content: `📢 **World Market Updates**:\n${message}`
     });
 
