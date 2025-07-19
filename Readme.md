@@ -20,6 +20,8 @@ To run this project locally you require few envs:
 - SMTP_USER - SMTP user used for sending emails
 - SMTP_PASS - SMTP password used for sending emails
 - SMTP_RECIPIENT - SMTP recipient used for sending emails
+- MARKET_TOKEN - Market token used for fetching data from the market API
+- DISCORD_WEBHOOK - Discord webhook used for sending messages to the Discord channel
 
 After you have all required envs run ```yarn build``` and ```yarn start```
 to start the app.
@@ -36,6 +38,9 @@ Health check endpoint, returns 'Ok' if the app is running. Used alongside with n
 
 - POST /wiki/send-suggestion
 Sends a suggestion from the wiki page to the email.
+
+- GET /wiki/worldMarketUpdates
+Sends a message to the Discord webhook with the list of worlds that were updated recently.
 
 ## Potential Improvements
 1. One day database will be full since I used free plan. It will take roughly a decade to fill up. Another cronjob could be added along with additional endpoint to delete old data to free up some space.
