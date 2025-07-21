@@ -45,7 +45,7 @@ export class WikiController {
       'Peloria', 'Antica'
     ]
     const filteredWorlds = worlds.filter(world => acceptedWorlds.includes(world.name))
-    const updatedWorlds = filteredWorlds.filter(world => differenceInMinutes(currentDate, new Date(world.last_update)) < 100)
+    const updatedWorlds = filteredWorlds.filter(world => differenceInMinutes(currentDate, new Date(world.last_update)) < 60)
 
     if (updatedWorlds.length === 0) {
       return { message: 'No updated worlds found' }
