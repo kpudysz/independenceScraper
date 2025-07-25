@@ -39,13 +39,7 @@ export class WikiController {
     });
     const worlds = response.data as Array<World>
     const currentDate = new Date()
-    const acceptedWorlds = [
-      'Xyla', 'Bona', 'Celesta', 'Dia', 'Harmonia', 'Karmeya',
-      'Nevia', 'Refugia', 'Thyria', 'Vunira', 'Monza', 'Secura',
-      'Peloria', 'Antica'
-    ]
-    const filteredWorlds = worlds.filter(world => acceptedWorlds.includes(world.name))
-    const updatedWorlds = filteredWorlds.filter(world => differenceInMinutes(currentDate, new Date(world.last_update)) < 60)
+    const updatedWorlds = worlds.filter(world => differenceInMinutes(currentDate, new Date(world.last_update)) < 61)
 
     if (updatedWorlds.length === 0) {
       return { message: 'No updated worlds found' }
